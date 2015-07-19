@@ -1,0 +1,57 @@
+
+#chart_holder{
+	width:100%;
+	min-width: 450px;
+	max-width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.chart-wrap{
+	position:relative;
+	height:400px;
+}
+
+.chart{
+	height:300px;
+	padding-top:20px;
+	border:1px solid black;
+	margin-left:70px;
+	position:relative;
+}
+
+.horizontal-top-label, .horizontal-label{
+	line-height:80px;
+	width:100%;
+	text-align:center;
+}
+
+.vertical-label {
+  line-height: 30px;
+  height: 100%;
+  margin: -440px 0 0 35px;
+  text-align: center;
+  transform: rotate(270deg);
+}
+
+.bar {
+  width: 50px;
+  background-color: #79BAEC;
+  margin: 0 10px 0 10px;
+  position: relative;
+  display: inline-block;
+  border: 1px solid;
+  border-bottom: none;
+  bottom: 1px;
+}
+
+.bar-name{
+	position:absolute;
+	bottom:-20px;
+}
+
+.y-bar-units{
+	position:absolute;
+	bottom:0px;
+	left:-30px;
+}

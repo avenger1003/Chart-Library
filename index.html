@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Chart Library Module</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="js/charting-library.js"></script>
+</head>
+<body>
+<div id="chart_holder"></div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var chartCfg = {
+			name: ['Orange', 'Apple', 'Mango', 'Banana'],
+			data: [100, 200, 500, 50]
+		};
+		var C = new Chart(chartCfg);		
+	});
+</script>
+
+<script id="chartWrapTemplate" type="text/template">
+
+	<div class="chart-wrap">
+		<div class="horizontal-top-label">Fruit Sales</div>
+		<div class="chart">
+			<div class="y-bar-units"></div>
+		</div>
+		<div class="horizontal-label">Fruits</div>
+		<div class="vertical-label">Pounds of Fruit Sold</div>
+	</div>
+</script>
+<script id="barTemplate" type="text/template">
+	<div class="bar"><div class="bar-name"></div></div>
+</script>
+</body>
+</html>
